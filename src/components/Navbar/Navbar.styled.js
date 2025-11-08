@@ -4,6 +4,23 @@ import styled, { keyframes } from "styled-components";
 import Link from "next/link";
 import { Box, Typography, Button } from "@mui/material";
 
+export const NavContainer = styled(Box)`
+  width: 85%;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+`;
+
+export const LogoContainer = styled(Box)`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
 // Gradient animation
 const gradientFlow = keyframes`
   0% { background-position: 0% 50%; }

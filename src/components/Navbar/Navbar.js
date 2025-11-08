@@ -10,20 +10,19 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  Icon,
   Box,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
 import {
   StyledAppBar,
-  Logo,
+  LogoContainer,
+  NavContainer,
+  BrandTitle,
   NavLinks,
   NavButton,
   DrawerContainer,
   DrawerList,
-  BrandTitle,
 } from "./Navbar.styled";
 import LogoIcon from "@/assets/logo.svg";
 import Image from "next/image";
@@ -43,44 +42,40 @@ const Navbar = () => {
   return (
     <>
       <StyledAppBar>
-        <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
-          <Box
-            display="flex"
-            alignItems="center"
-            gap={1}
-            component={Link}
-            href="/"
-          >
-            {/* <AcUnitIcon /> */}
-            <Image
-              src={LogoIcon}
-              alt="Anusha Makeovers Logo"
-              width={32}
-              height={32}
-            />
-            <BrandTitle variant="h6">
-              Anusha <span>Makeovers</span>
-            </BrandTitle>
-          </Box>
+        <NavContainer>
+          <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
+            {/* Logo Section */}
+            <LogoContainer component={Link} href="/">
+              <Image
+                src={LogoIcon}
+                alt="Anusha Makeovers Logo"
+                width={32}
+                height={32}
+              />
+              <BrandTitle variant="h6">
+                Anusha <span>Makeovers</span>
+              </BrandTitle>
+            </LogoContainer>
 
-          {/* Desktop Navigation */}
-          <NavLinks>
-            {navItems.map((item) => (
-              <NavButton key={item.href} component={Link} href={item.href}>
-                {item.label}
-              </NavButton>
-            ))}
-          </NavLinks>
+            {/* Desktop Navigation */}
+            <NavLinks>
+              {navItems.map((item) => (
+                <NavButton key={item.href} component={Link} href={item.href}>
+                  {item.label}
+                </NavButton>
+              ))}
+            </NavLinks>
 
-          {/* Mobile Hamburger */}
-          <IconButton
-            color="inherit"
-            onClick={handleDrawerToggle}
-            sx={{ display: { xs: "flex", md: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
+            {/* Mobile Hamburger */}
+            <IconButton
+              color="inherit"
+              onClick={handleDrawerToggle}
+              sx={{ display: { xs: "flex", md: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </NavContainer>
       </StyledAppBar>
 
       {/* Mobile Drawer */}
