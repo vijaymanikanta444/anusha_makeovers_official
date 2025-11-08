@@ -1,0 +1,79 @@
+Since you’ve already completed these parts:
+✅ Navbar
+✅ Hero / Landing section
+✅ About section (with parallax background and responsive typography)
+
+Let’s go through what’s typically next for a beauty makeover static site, especially one for Anusha Makeovers ✨
+
+🌸 Suggested Remaining Sections (in ideal order)
+1. 💅 Services Section
+
+Showcase the key makeover services.
+
+Layout: 3–6 cards (MUI Grid or Card components)
+
+Content: Bridal, Party, Groom, Hair Styling, HD Makeup, etc.
+
+Design Tip: Soft pastel background or gradient, icons or real photos.
+
+Optional: Add hover animation or glassmorphism for elegance.
+
+2. 💖 Portfolio / Gallery Section
+
+Display before–after photos or event looks.
+
+Use a Masonry grid or Lightbox gallery (e.g., react-photo-gallery)
+
+Include filters (Bridal / Party / Editorial)
+
+Optional: subtle fade-in animation when scrolling
+
+3. 🧿 Testimonials Section
+
+Real client reviews build trust.
+
+Carousel layout (MUI Carousel or Swiper)
+
+Each card: client name, occasion, short message, and optional photo.
+
+Background: soft, non-distracting gradient.
+
+4. 📍 Contact / Booking Section
+
+Encourage users to book a session or get in touch.
+
+Include:
+
+Contact form (Name, Email, Message)
+
+WhatsApp / Instagram links
+
+Phone number & email
+
+Embedded Google Map (studio location)
+
+5. 🌹 Footer Section
+
+Simple, elegant closing section.
+
+Include:
+
+Copyright text
+
+Quick links (Home, About, Services, Contact)
+
+Social media icons
+
+Background: gradient or black with gold text highlights
+
+🌟 Optional Enhancements
+
+Floating “Book Now” button (links to WhatsApp)
+
+Instagram Feed Embed
+
+Parallax separator between sections (using subtle images)
+
+Smooth scroll animation for navigation links
+
+Add AOS

@@ -18,10 +18,6 @@ export default function HeroSection() {
         <Title variant="h2">
           Discover the <span>Art of Elegance</span>
         </Title>
-        {/* <Subtitle>
-          Bridal, Party & Professional Makeovers — crafted with passion and
-          precision for every occasion.
-        </Subtitle> */}
         <Subtitle>
           <span className="highlight">
             Bridal, Party & Professional Makeovers

@@ -1,10 +1,16 @@
-import { AboutSection, HeroSection, TypeWriter } from "@/components";
+import {
+  AboutSection,
+  HeroSection,
+  ServicesSection,
+  TypeWriter,
+} from "@/components";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <AboutSection />
+      <ServicesSection />
       <div
         style={{
           height: "100vh",
