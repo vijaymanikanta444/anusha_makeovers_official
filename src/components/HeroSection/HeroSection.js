@@ -12,7 +12,7 @@ import {
 
 export default function HeroSection() {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <Overlay />
       <Content>
         <Title variant="h2">
